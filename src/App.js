@@ -44,17 +44,9 @@ function App() {
       <hr style={{ margin: '15px 0' }} ></hr>
       <PostFilter
         filter={filter}
-        setFilter={setFilter} />
-      {sortedAndSearchedPosts.length
-        ?
-        <PostList remove={removePost} posts={sortedAndSearchedPosts} title="List of PL 2023 " />
-        :
-        <h1
-          style={{ textAlign: 'center' }}>
-          Posts not found
-        </h1>
-      }
-
+        setFilter={setFilter}
+      />
+      <PostList remove={removePost} posts={sortedAndSearchedPosts} title="List of PL 2023 " />
     </div>
   );
 };
